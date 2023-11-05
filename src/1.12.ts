@@ -29,5 +29,9 @@
 
 
 
-
+    //never is used when a function never returns any type
+    const throwError = (message: string): never => {
+        throw new Error(message);
+    }
+    throwError('Error Occurred successfully 🙂');
 }
